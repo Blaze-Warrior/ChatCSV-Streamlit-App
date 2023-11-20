@@ -8,11 +8,11 @@ from pandasai import PandasAI
 load_dotenv()
 
 
-openai_api_key = os.getenv("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")
+openai_api_key = os.getenv("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")
 
 
 def chat_with_csv(df,prompt):
-    llm = OpenAI(api_token=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)
+    llm = OpenAI(api_token=openai_api_key)
     pandas_ai = PandasAI(llm)
     result = pandas_ai.run(df, prompt=prompt)
     print(result)
